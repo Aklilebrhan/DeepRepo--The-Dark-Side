@@ -1,0 +1,12 @@
+node_modules
+dist
+build
+coverage
+.deeprepo
+.gitmind
+*.tsbuildinfo
+pnpm-lock.yaml
+src-tauri/target
+e2e/fixtures
+playwright-report
+test-results

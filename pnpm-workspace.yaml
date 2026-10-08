@@ -1,0 +1,9 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'e2e'
+
+onlyBuiltDependencies:
+  - esbuild
+  - protobufjs
+  - sharp

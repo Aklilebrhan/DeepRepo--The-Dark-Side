@@ -1,0 +1,37 @@
+{
+  "name": "deeprepo-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepRepo – The Dark Side: Local Codebase RAG & Semantic Explorer",
+  "packageManager": "pnpm@12.10.1",
+  "scripts": {
+    "dev": "pnpm --filter @deeprepo/desktop dev",
+    "build": "pnpm --filter \"@deeprepo/*\" build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "pnpm --filter @deeprepo/e2e test",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md,yml,yaml}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "protobufjs",
+      "sharp"
+    ]
+  }
+}

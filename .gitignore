@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Test & coverage
+coverage/
+playwright-report/
+test-results/
+
+# Tauri Rust build artifacts
+apps/desktop/src-tauri/target/
+
+# Local cache & DeepRepo runtime directories
+.deeprepo/
+.gitmind/
+.cache/
+*.log
+
+# Environment variables & OS files
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db

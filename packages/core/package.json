@@ -1,0 +1,23 @@
+{
+  "name": "@deeprepo/core",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@deeprepo/config": "workspace:*",
+    "@deeprepo/embed-model": "workspace:*",
+    "@deeprepo/llm-bridge": "workspace:*",
+    "isomorphic-git": "^1.25.10",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

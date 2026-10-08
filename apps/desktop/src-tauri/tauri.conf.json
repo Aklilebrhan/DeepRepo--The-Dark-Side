@@ -1,0 +1,48 @@
+{
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "DeepRepo - The Dark Side",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "fs": {
+        "all": true,
+        "scope": ["$HOME/**", "$APPDATA/**", "$DESKTOP/**"]
+      },
+      "dialog": {
+        "all": true,
+        "open": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "MIT",
+      "identifier": "com.deeprepo.darkside",
+      "targets": "all"
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "title": "DeepRepo – The Dark Side",
+        "width": 1280,
+        "height": 840,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ]
+  }
+}

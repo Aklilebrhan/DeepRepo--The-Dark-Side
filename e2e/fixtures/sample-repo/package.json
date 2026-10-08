@@ -1,0 +1,7 @@
+{
+  "name": "sample-repo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample repository fixture for DeepRepo indexing and testing",
+  "main": "src/utils.ts"
+}
